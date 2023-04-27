@@ -1,0 +1,93 @@
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden;
+  }
+  body { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-image: url('https://static.wixstatic.com/media/f45a57_5aabc16ac08642e78c0d6e3834c4ca07~mv2.png'); 
+  }
+
+  canvas {
+    display: block;
+  }
+
+.returnButton {
+    position: absolute;
+
+    left:650px;
+    top: 650px;
+}
+
+.bowl_back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bowl_front {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+#fortune_paper {
+    position: absolute;
+    left: 475px;
+    top: 180px;
+    border-radius: 64px;
+}
+
+
+
+.fortunePaper {
+    z-index: 10;
+    animation: fadeIn 13s steps(1,end);
+}
+
+
+/* #reveal_text {
+
+    left: 500px;
+    top: -100px;
+
+
+    z-index: 15;
+    animation: fadeIn 14s steps(1,end);
+    -webkit-animation: fadeIn 14s;
+    -moz-animation: fadeIn 14s;
+    -o-animation: fadeIn 14s;
+    -ms-animation: fadeIn 14s;
+    animation-fill-mode: forwards;
+} */
+
+
+
+
+  main {
+    display: flex;
+  }
+  p {
+
+    font-size: 50px;
+    /* text-align: center; */
+
+    font-family: "Kosugi", sans-serif;
+    line-height: 1;
+  }
+  /* span {
+    display: block;
+    width: 2vmax; 
+    height: 2vmax; 
+    font-size: 2vmax; 
+    color: #9bff9b11;
+    text-align: center;
+    font-family: "Kosugi", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  } */

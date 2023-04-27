@@ -1,0 +1,62 @@
+body {
+    background-color: #ffffff;
+    cursor: url('https://static.wixstatic.com/media/f45a57_75da5d9d586d4e23be13b2d96babf332~mv2.png'), auto;
+    
+}
+
+#prick_title {
+    position: absolute;
+    width: 543px;
+    height: 59px;
+    left: 450px;
+    top: 112px;
+}
+
+h1 {
+
+font-family: 'Kosugi', sans-serif;
+font-style: normal;
+font-weight: 200;
+font-size: 64px;
+line-height: 64px;
+text-align: center;
+
+color: #000000;
+}
+
+.fingerprint_img {
+    position: absolute; 
+    left: 550px;
+    top: 253px;
+}
+
+.drip_button {
+    animation: fadein 5s steps(1, end);
+
+    position: absolute;
+    width: 543px;
+    height: 59px;
+    left: 450px;
+    top: 112px;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+a:visited,
+a:link {
+text-decoration: none;
+color:  #000000;
+}
+a:hover {
+    text-decoration: none;
+    color:#bf231c;  
+}
+a:active {
+text-decoration: none;
+color:#000000;
+}
+
+
+

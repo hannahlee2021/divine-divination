@@ -1,0 +1,31 @@
+.falling {
+    position: relative;
+    overflow: auto;
+    width: 100vh;
+    height: 100vh;
+    left: 650px;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    border: none;
+    
+}
+
+.blood_droplet {
+    z-index: 1;
+    
+    transform: translateY(-200px);
+    animation-name: blood_fall;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s; 
+}
+
+@keyframes blood_fall {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(680px);
+    }
+}

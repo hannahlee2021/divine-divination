@@ -1,0 +1,359 @@
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden;
+  }
+  body { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: none; 
+  }
+
+.bowl {
+    /* display: inline; */
+    position: absolute;
+    overflow: auto;
+    width: 100vh; 
+    height: 100vh;
+    left: 525px;
+
+    animation-name: mix;
+    animation-duration: 2s;
+    /* animation-delay: 0.5s; */
+    animation-iteration-count: 1;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    border: none;
+    
+}
+
+
+@keyframes mix {
+    0% {
+        transform: translateX(200px) rotateY(0deg);
+      }
+      50% {
+        transform: translateX(-200px) rotateY(0deg);
+      }
+      100% {
+        transform: translateX(0px) rotateY(0deg);
+      }
+}
+
+.smoke_1 {
+    position: absolute;
+    /* width: 690px;
+    height: 375px; */
+    left: 350px;
+    top: 257px;
+
+    animation: fadeIn 3s steps(1, end);
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_2 {
+    position: absolute;
+    /* width: 1253px;
+    height: 766px; */
+    left: 208px;
+    top: 137px;
+
+    animation: fadeIn 5s steps(1, end);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_3 {
+    position: absolute;
+    /* width: 500vh;
+    height: 500vh; */
+    left: -37px;
+    top: -200px;
+
+    animation: smoke_3 7s steps(1, end);
+}
+
+@keyframes smoke_3 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_4 {
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -195px;
+    top: -400px;
+
+    animation: smoke_4 9s steps(1, end);
+}
+
+@keyframes smoke_4 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_5 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -195px;
+    top: -400px;
+
+    animation: smoke_5 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_5 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_6 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -195px;
+    top: -400px;
+
+    animation: smoke_6 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_6 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_7 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -100px;
+    top: -400px;
+
+    animation: smoke_7 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_7 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_8 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -100px;
+    top: -400px;
+
+    animation: smoke_8 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_8 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_9 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -150px;
+    top: -400px;
+
+    animation: smoke_9 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_9 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_10 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -150px;
+    top: -400px;
+
+    animation: smoke_10 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_10 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_11 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -195px;
+    top: -400px;
+
+    animation: smoke_11 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_11 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.smoke_12 {
+    z-index: 5;
+    position: absolute;
+    /* width: 1902px;
+    height: 1464px; */
+    left: -175px;
+    top: -400px;
+
+    animation: smoke_12 11s steps(1, end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes smoke_12 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+.bowl_back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bowl_front {
+    /* z-index: 2; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+#fortune_paper {
+    position: absolute;
+    left: 475px;
+    top: 180px;
+    border-radius: 64px;
+}
+
+#stamp {
+    position: absolute;
+    left: 675px;
+    top: 450px; 
+}
+
+#stamp_button {
+    position: absolute;
+    left: 675px;
+    top: 450px; 
+
+    animation: fadeIn 15s steps(1,end);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fortunePaper {
+    z-index: 10;
+    animation: fadeIn 13s steps(1,end);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#reveal_text {
+
+    left: 500px;
+    top: -100px;
+
+
+    z-index: 15;
+    animation: fadeIn 14s steps(1,end);
+    /* -webkit-animation: fadeIn 14s;
+    -moz-animation: fadeIn 14s;
+    -o-animation: fadeIn 14s;
+    -ms-animation: fadeIn 14s; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+/* 
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  } */
+
+
+  main {
+    display: flex;
+  }
+  p {
+
+    font-size: 50px;
+    /* text-align: center; */
+
+    font-family: "Kosugi", sans-serif;
+    line-height: 1;
+  }
+  /* span {
+    display: block;
+    width: 2vmax; 
+    height: 2vmax; 
+    font-size: 2vmax; 
+    color: #9bff9b11;
+    text-align: center;
+    font-family: "Kosugi", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  } */

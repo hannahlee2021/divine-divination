@@ -1,0 +1,144 @@
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    overflow: hidden;
+  }
+  body { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: none; 
+  }
+
+  .falling {
+    /* display: inline; */
+    position: absolute;
+    overflow: hidden;
+    width: 100vh; 
+    height: 100vh;
+    left: 630px;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    border: none;
+    
+}
+
+.bowl {
+    /* display: inline; */
+    position: absolute;
+    overflow: auto;
+    width: 100vh; 
+    height: 100vh;
+    left: 525px;
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    border: none;
+    
+}
+
+.bowl_back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bowl_front {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.stick_png {
+    position: absolute;
+    overflow: auto;
+    /* width: 100vh; 
+    height: 100vh; */
+    left: 600px;
+    /* bottom: 200px; */
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    border: none;
+}
+
+.blood_droplet {
+    z-index: 1;
+    
+    transform: translateY(-200px);
+    animation-name: blood_fall;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    /* animation-delay: 0.5s;  */
+}
+
+@keyframes blood_fall {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(600px);
+    }
+}
+
+.stick {
+        /* display: inline; */
+        position: absolute;
+        overflow: hidden;
+        width: 100vh; 
+        height: 100vh;
+        left: 630px;
+        /* margin-left: auto;
+        margin-right: auto;
+        display: block; */
+        border: none;
+}
+#stick_mix {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 30%;
+}
+
+.mixing_stick {
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+    animation: mixingStick 4s infinite;
+
+}
+
+@keyframes mixingStick {
+    0% {
+        transform: translateX(100px) rotateY(0deg);
+      }
+     
+      50% {
+        transform: translateX(500px) rotateY(0deg);
+      }
+      100% {
+        transform: translateX(100px) rotateY(0deg);
+      }
+}
+
+  main {
+    display: flex;
+  }
+  p {
+    line-height: 1;
+  }
+  span {
+    display: block;
+    width: 2vmax; 
+    height: 2vmax; 
+    font-size: 2vmax; 
+    color: #9bff9b11;
+    text-align: center;
+    font-family: "Kosugi", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
